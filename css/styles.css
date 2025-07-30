@@ -1,0 +1,39 @@
+:root {
+  --primary-color: #1F70B8;
+  --font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #000;
+}
+
+header, nav, main, section, footer {
+  padding: 1rem;
+}
+
+h1, h2, h3 {
+  color: var(--primary-color);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
